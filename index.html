@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Indonesian Nature Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom, #00c6ff, #0072ff);
+            overflow-y: auto; /* Izinkan pengguliran vertikal */
+            height: 200%; /* Setel tinggi badan ke 100% dari viewport */
+        }
+
+        header {
+            background-color: #58bbe1;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            background: linear-gradient(to right, #080a7c, hsl(197, 84%, 38%));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px;
+            flex-grow: 1; /* Buat elemen utama mengambil ruang yang tersisa */
+            overflow-y: auto; /* Izinkan pengguliran vertikal di dalam elemen utama */
+        }
+
+        .destination {
+            color: rgb(190, 255, 255);
+            padding: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+        }
+
+        .destination-image {
+            width: 100%; /* membuat gambar mengisi lebar kontainer penuh */
+            height: 150px; /* setel tinggi gambar */
+            object-fit: cover; /* skalakan gambar untuk mengisi kontainer secara penuh */
+            border-radius: 5px; /* tambahkan radius border yang sedikit pada gambar */
+            margin: 10px; /* tambahkan margin sekitar gambar */
+            padding: 10px; /* tambahkan padding sekitar gambar */
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #12707e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Natural Wonders of Indonesia</h1>
+    </header>
+    <main>
+        <section class="destination" onclick="navigate('sawarna.html')">
+            <h2>Sawarna</h2>
+            <p>Temukan keindahan tersembunyi di Pantai Sawarna yang memikat. Liburan alam yang menenangkan di tepi pantai selatan.</p>
+            <img src="sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="Sawarna Beach" class="destination-image">
+        </section>
+        
+        <section class="destination" onclick="navigate('ujungkulon.html')">
+            <h2>Ujung Kulon</h2>
+            <p>Jelajahi keajaiban Ujung Kulon, rumah bagi Badak Jawa dan hutan tropis yang mempesona. Petualangan alam tak terlupakan.</p>
+            <img src="ujungkulon foto.jpeg" alt="Ujung Kulon National Park" class="destination-image">
+        </section>
+    </main>
+    <script src="wisata.js"></script>
+</body>
+</
